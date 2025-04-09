@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="search-input">
+            <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        
+        <div class="weather-box">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city">London</span>
+            </div>
+            <div class="weather-info">
+                <img src="" alt="weather icon" id="weather-icon">
+                <h1 id="temperature">20°C</h1>
+                <h2 id="description">Clear Sky</h2>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <p id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p id="wind-speed">5 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-compass"></i>
+                    <div>
+                        <p id="wind-direction">N</p>
+                        <p>Wind Direction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-details">
+                <div class="col">
+                    <i class="fa-solid fa-temperature-low"></i>
+                    <div>
+                        <p id="feels-like">18°C</p>
+                        <p>Feels Like</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-gauge"></i>
+                    <div>
+                        <p id="pressure">1015 hPa</p>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-eye"></i>
+                    <div>
+                        <p id="visibility">10 km</p>
+                        <p>Visibility</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
