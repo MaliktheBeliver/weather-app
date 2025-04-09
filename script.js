@@ -104,7 +104,7 @@ function getCurrentLocation() {
             },
             (error) => {
                 console.error('Geolocation error:', error);
-                getWeatherData('London'); // Fallback to London if location access is denied
+                getWeatherData('Imphal'); // Fallback to London if location access is denied
             }
         );
     } else {
